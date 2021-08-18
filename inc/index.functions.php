@@ -46,7 +46,7 @@ function ListOldReports($dir) {
 	#$dir_files = array_diff(scandir($dir), array('..', '.'));
 	$dir_files = listdir_by_date($dir);
 	echo "<thead>";
-	echo "<tr><th>Report timestamp</th><th align=\"left\">Report</th></tr>\n";
+	echo "<tr><th>Data da geração</th><th align=\"left\">Relatório</th></tr>\n";
 	echo "</thead>";
 	echo "<tbody>";
 	foreach ($dir_files as $fdate => $fname) {

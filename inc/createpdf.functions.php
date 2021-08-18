@@ -211,7 +211,7 @@ function CreatePDF($hostarray) {
 	//	$ItemsOn = "yes";
 	//	$TrendsOn = "yes";
 		if ($ItemsOn == "yes" ) {
-			$stringData = "1<System Status for ".$hostname.">\n\n";
+			$stringData = "1<Status do sistema: ".$hostname.">\n\n";
 			fwrite($fh,$stringData);
 			$stringData="#C\n"; // Use CODE font
 			fwrite($fh, $stringData);
@@ -267,7 +267,7 @@ function CreatePDF($hostarray) {
 		}
 	// Trends
 		if ($TrendsOn == "yes" ) {
-			$stringData = "1<Trends and metrics for ".$hostname.">\n\n";
+			$stringData = "1<Trends e métricas: ".$hostname.">\n\n";
 			fwrite($fh,$stringData);
 			$stringData="#C\n"; // Use CODE font
 			fwrite($fh, $stringData);
@@ -341,7 +341,7 @@ function CreatePDF($hostarray) {
 
 			if (!empty($alerts[0])) {
 				if ($debug) { echo "<pre>" ; print_r($alerts); echo "</pre><br/>\n"; }
-				$stringData = "1<Trigger data for ".$hostname.">\n\n";
+				$stringData = "1<Dados de Trigger: ".$hostname.">\n\n";
 				fwrite($fh,$stringData);
 			    $stringData="#C\n"; // Use CODE font
 			    fwrite($fh, $stringData);
@@ -387,7 +387,7 @@ function CreatePDF($hostarray) {
 				fwrite($fh,"#NP\n");
 			}
 
-			$stringData = "1<Graphs for ".$hostname.">\n\n";
+			$stringData = "1<Gráficos: ".$hostname.">\n\n";
 			fwrite($fh, $stringData);
 	/*		fclose($fh); */
 			#$hostGraphs = ZabbixAPI::fetch_array('graph','get',array('output'=>'extend','hostids'=>$hostid))
@@ -441,7 +441,7 @@ function CreatePDF($hostarray) {
 				fwrite($fh,"#NP\n");
 			} */
 
-			$stringData = "1<Item Graphs for ".$hostname.">\n\n";
+			$stringData = "1<Gráficos de itens: ".$hostname.">\n\n";
 			fwrite($fh, $stringData);
 	/*		fclose($fh); */
 			#$hostGraphs = ZabbixAPI::fetch_array('graph','get',array('output'=>'extend','hostids'=>$hostid))

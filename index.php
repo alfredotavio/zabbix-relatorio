@@ -42,9 +42,9 @@ header("location: chooser.php");
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<title>Zabbix Dynamic PDF Report</title>
+	<title>Relatórios Zabbix</title>
 	<meta charset="utf-8" />
-	<link rel="shortcut icon" href="/zabbix/favicon.ico" />
+	<link rel="shortcut icon" href="/images/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/zabbix.default.css" />
 	<link rel="stylesheet" type="text/css" href="css/zabbix.color.css" />
 	<link rel="stylesheet" type="text/css" href="css/zabbix.report.css" />
@@ -53,9 +53,10 @@ header("location: chooser.php");
 </head>
 <body class="originalblue">
 <div id="message-global-wrap"><div id="message-global"></div></div>
-<table class="maxwidth page_header" cellspacing="0" cellpadding="5"><tr><td class="page_header_l"><a class="image" href="http://www.zabbix.com/" target="_blank"><div class="zabbix_logo">&nbsp;</div></a></td><td class="maxwidth page_header_r">&nbsp;</td></tr></table>
 <br/><br/>
-<center><h1>Log in to Zabbix to Generate PDF reports</h1></center>
+<br/>
+<center><img src="images/mytec_index.png"></center>
+<center><h1>Gerador de relatórios PDF</h1></center>
 <br/>
 <center>
 <form action="" method="post">
@@ -79,8 +80,8 @@ header("location: chooser.php");
 &nbsp;
 </td></tr>
 <td>&nbsp;</td><td valign="bottom" align="left">
-<input type='submit' value='Sign in'>
-<p>Version <?php echo($version); ?></p>
+<input type='submit' value='Login'>
+<p>Versão <?php echo($version); ?></p>
 </td></tr>
 </table>
 

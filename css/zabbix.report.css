@@ -14,12 +14,19 @@
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
 
+.zabbix_logo2
+{
+	background: #FFFFFF url('../images/zabbix_logo2.png') no-repeat;
+	cursor: pointer;
+	height: 31px;
+	width: 118px;
+}
 .zabbix_logo
 {
 	background: #FFFFFF url('../images/general/zabbix.png') no-repeat;
 	cursor: pointer;
-	height: 31px;
-	width: 118px;
+	height: 150px;
+	width: 80px;
 }
 .block
 {

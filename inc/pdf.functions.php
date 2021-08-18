@@ -59,7 +59,7 @@ function company_logo(&$pdf,$x,$y,$height,$wl=0,$wr=0){
     $th = $pdf->getFontHeight($ts);
     $td = $pdf->getFontDecender($ts);
     $tw = $pdf->getTextWidth($ts,$text);
-    $pdf->setColor(212/255,0/255,0/255);
+    $pdf->setColor(242/255,159/255,5/255);
     $z = 0.86;
     $pdf->filledRectangle($x-$wl,$y-$z*$h*$factor,$tw*1.2+$wr+$wl,$h*$factor*$z);
     $pdf->setColor(255/255,255/255,255/255);
