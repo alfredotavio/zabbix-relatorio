@@ -259,7 +259,7 @@ $pdf->ezText("Relatório Zabbix",(40-strlen($company_name)),array('justification
 $pdf->ezText("",14,array('justification'=>'centre'));
 $pdf->ezText("para",16,array('justification'=>'centre'));
 $pdf->ezText("",14,array('justification'=>'centre'));
-$pdf->ezText("$name",40,array('justification'=>'centre'));
+$pdf->ezText("$name",30,array('justification'=>'centre'));
 $pdf->ezText("",14,array('justification'=>'centre'));
 $pdf->ezText("gerado em",14,array('justification'=>'centre'));
 $pdf->ezText("",14,array('justification'=>'centre'));
@@ -270,7 +270,7 @@ $pdf->openHere('Fit');
 
 company_logo($pdf,150,$pdf->y-80,80,150,200);
 
-$pdf->ezSetDy(-400);
+$pdf->ezSetDy(-350);
 $pdf->ezText("Data início: $report_start",14,array('justification'=>'right'));
 $pdf->ezText("Data final: $report_end",14,array('justification'=>'right'));
 

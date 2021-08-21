@@ -44,9 +44,9 @@ header( 'Content-type: text/html; charset=utf-8' );
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<title>Zabbix Dynamic PDF Report</title>
+	<title>Relatórios Zabbix</title>
 	<meta charset="utf-8" />
-	<link rel="shortcut icon" href="/zabbix/favicon.ico" />
+	<link rel="shortcut icon" href="/images/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/zabbix.default.css" />
 	<link rel="stylesheet" type="text/css" href="css/zabbix.color.css" />
 	<link rel="stylesheet" type="text/css" href="css/zabbix.report.css" />
