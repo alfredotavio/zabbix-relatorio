@@ -18,8 +18,10 @@ $showdates = false; // Prepend date and time on items and trends, or leave it ou
 
 // Would you like to limit what graphs are displayed? Enter partial matches (or complete names) here.
 // $mygraphs = '#.*#'; // Match all graphs
-$mygraphs = '#(Ping|CPU load|CPU usage|CPU util|processor|Disk space|Swap|Ethernet|Memory usage|^Traffic on |traffic on eth)#';
-$myitemgraphs = '#(Utilization of|farm connection|Average Latency|Number of processes|Cache % Hit)#';
+//$mygraphs = '#(Ping|CPU load|CPU usage|CPU util|processor|Disk space|Swap|Ethernet|Memory usage|^Traffic on |traffic on eth)#';
+//$myitemgraphs = '#(Utilization of|farm connection|Average Latency|Number of processes|Cache % Hit)#';
+$mygraphs = '#(CPU usage|CPU utilization|Memory utilization|Interface|Swap usage|Disk utilization)#';
+$myitemgraphs = '#(Space utilization|Free inodes|System uptime|Load average|Number of processes|Number of logged in users)#';
 
 # zabbix server info(user must have API access)
 $z_server 	= 'https://zabbix.grupomytec.com.br/';

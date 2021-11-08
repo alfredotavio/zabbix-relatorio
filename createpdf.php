@@ -95,10 +95,10 @@ if (isset($_GET['ReportRange'])) {
 		$endtime    = strtotime($_GET['enddate'] . " " . $_GET['endtime']);
 		$timeperiod = $endtime - $starttime;
 		if ($starttime > $endtime) {
-			echo "<font color=\"red\"><h1>Startdate need to be before tomorrow or end date!</h1></font></br>\n";
+			echo "<font color=\"red\"><h1>Data de início precisa ser antes da data final!</h1></font></br>\n";
 			exit;
 		} elseif ($endtime - $starttime < 3600) {
-			echo "<font color=\"red\"><h1>Time frame need to be minimum 1 hour!</h1></font></br>\n";
+			echo "<font color=\"red\"><h1>O período deve ser de no mínimo de 1 hora!</h1></font></br>\n";
 			exit;
 		}
 	}
