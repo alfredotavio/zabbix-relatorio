@@ -341,7 +341,7 @@ function CreatePDF($hostarray) {
 
 			if (!empty($alerts[0])) {
 				if ($debug) { echo "<pre>" ; print_r($alerts); echo "</pre><br/>\n"; }
-				$stringData = "1<Dados de Trigger: ".$hostname.">\n\n";
+				$stringData = "1<Reconhecimento de trigger: ".$hostname.">\n\n";
 				fwrite($fh,$stringData);
 			    $stringData="#C\n"; // Use CODE font
 			    fwrite($fh, $stringData);
@@ -364,7 +364,7 @@ function CreatePDF($hostarray) {
 							if ($debug) { echo "<pre>" ; print_r($event); echo "</pre><br/>\n"; }
 							$msg=$event['acknowledges'][0]['message'];
 							$tstamp=$event['acknowledges'][0]['clock'];
-							$stringData="<b>  Acknowledged at: ".date("Y-m-d H:m:s",$tstamp) . " - " . $msg . " (" . $alias . ")";
+							$stringData="<b>  Reconhecido em: ".date("d/m/y H:m:s",$tstamp) . " - " . $msg . " (" . $alias . ")";
 							fwrite($fh, $stringData);
 							fwrite($fh, "</b>\n");
 						}
@@ -423,14 +423,16 @@ function CreatePDF($hostarray) {
 				} else {
 					if (($debug) and ($mygraphs!="")) { echo "$graphname (id:$graphid) did not match the expression - skipping it.<BR/>\n"; }
 				}
+				// Original Três por página
 				if ( $count == 3 ) {
+				// if ( $count == 2 ) {
 					fwrite($fh, "#NP\n");
 					$count = 0;
 				}
 				if ($debug) { flush(); ob_flush(); flush(); }
 			}
 			if (strpos($stringData,'1<') === 0 ) {
-				fwrite($fh, "No matching graphs found. Maybe tune the setting?\n");
+				fwrite($fh, "Nenhum gráfico encontrado.\n");
 			} else {
 				fwrite($fh, "#NP\n");
 			}
@@ -477,14 +479,16 @@ function CreatePDF($hostarray) {
 				} else {
 					if (($debug) and ($myitemgraphs!="")) { echo "$graphname (id:$graphid) did not match the expression - skipping it.<BR/>\n"; }
 				}
+				// Original Três por página
 				if ( $count == 3 ) {
+				// if ( $count == 2 ) {
 					fwrite($fh, "#NP\n");
 					$count = 0;
 				}
 				if ($debug) { flush(); ob_flush(); flush(); }
 			}
 			if (strpos($stringData,'1<') === 0 ) {
-				fwrite($fh, "No items found to graph. Maybe tune the setting?\n");
+				fwrite($fh, "Nenhum gráfico de item encontrado.\n");
 			} else {
 				fwrite($fh, "#NP\n");
 			}

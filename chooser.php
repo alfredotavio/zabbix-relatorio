@@ -182,15 +182,15 @@ ReadArray($host_groups);
 </select>
 </p>
 <p>
-<input type="checkbox" name="GraphsOn" value="yes" checked> Incluir gráficos</input> &nbsp;
-<input type="checkbox" name="ItemGraphsOn" value="yes"> Incluir items com gráfico</input> &nbsp;
-<input type="checkbox" name="TriggersOn" value="yes"> Exibir triggers</input><BR/>
+<input type="checkbox" name="GraphsOn" value="yes" checked> Exibir gráficos</input> &nbsp;
+<input type="checkbox" name="ItemGraphsOn" value="yes"> Exibir items com gráfico</input> &nbsp;
+<input type="checkbox" name="TriggersOn" value="yes"> Exibir reconhecimento de trigger</input><BR/>
 <input type="checkbox" name="ItemsOn" value="yes"> Exibir status de items configurados</input> &nbsp;
 <input type="checkbox" name="TrendsOn" value="yes"> Exibir trends configuradas (SLA-ish)</input>
 </p>
 <p>
 <input type="string" name="mygraphs2" style="font-size: 10px;"  size=80 value="<?php echo $mygraphs; ?>"> &uarr; Gráficos a exibir (#.*# = todos):</input>
-<input type="string" name="myitems2" style="font-size: 10px;"  size=80 value="<?php echo $myitemgraphs; ?>"> &uarr; Items com gráfico (#.*# = todos):</input>
+<input type="string" name="myitems2" style="font-size: 10px;"  size=80 value="<?php echo $myitemgraphs; ?>"> &uarr; Items com gráfico a exibir (#.*# = todos):</input>
 </p>
 </td><td valign="middle">
 &nbsp;
@@ -230,7 +230,7 @@ ReadArray($host_groups);
 </table>
 </form>
 <br/>
-<h2 id="h_OldReports">Relatórios antigos<br>
+<!-- <h2 id="h_OldReports">Relatórios antigos<br>
 (clique para exibir)</h2>
 </center>
 
@@ -273,6 +273,6 @@ jQuery(function(){
 
 jQuery('#timepicker_start').datetimepicker({ datepicker:false, format:'H:i' });
 jQuery('#timepicker_end').datetimepicker({ datepicker:false, format:'H:i' });
-</script>
+</script> -->
 </body>
 </html>
