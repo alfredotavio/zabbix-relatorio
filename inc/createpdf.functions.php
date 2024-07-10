@@ -424,8 +424,8 @@ function CreatePDF($hostarray) {
 					if (($debug) and ($mygraphs!="")) { echo "$graphname (id:$graphid) did not match the expression - skipping it.<BR/>\n"; }
 				}
 				// Original Três por página
-				if ( $count == 3 ) {
-				// if ( $count == 2 ) {
+				// if ( $count == 3 ) {
+				 if ( $count == 2 ) {
 					fwrite($fh, "#NP\n");
 					$count = 0;
 				}
@@ -480,8 +480,8 @@ function CreatePDF($hostarray) {
 					if (($debug) and ($myitemgraphs!="")) { echo "$graphname (id:$graphid) did not match the expression - skipping it.<BR/>\n"; }
 				}
 				// Original Três por página
-				if ( $count == 3 ) {
-				// if ( $count == 2 ) {
+				// if ( $count == 3 ) {
+				 if ( $count == 2 ) {
 					fwrite($fh, "#NP\n");
 					$count = 0;
 				}

@@ -270,7 +270,7 @@ function ezGetCurrentPageNumber(){
 
 // ------------------------------------------------------------------------------
 
-function ezStartPageNumbers($x,$y,$size,$pos='left',$pattern='{PAGENUM} of {TOTALPAGENUM}',$num=''){
+function ezStartPageNumbers($x,$y,$size,$pos='left',$pattern='{PAGENUM} de {TOTALPAGENUM}',$num=''){
   // put page numbers on the pages from here.
   // place then on the 'pos' side of the coordinates (x,y).
   // pos can be 'left' or 'right'
@@ -284,7 +284,7 @@ function ezStartPageNumbers($x,$y,$size,$pos='left',$pattern='{PAGENUM} of {TOTA
     $pos='left';
   }
   if (!$pattern || !strlen($pattern)){
-    $pattern='{PAGENUM} of {TOTALPAGENUM}';
+    $pattern='{PAGENUM} de {TOTALPAGENUM}';
   }
   if (!isset($this->ez['pageNumbering'])){
     $this->ez['pageNumbering']=array();

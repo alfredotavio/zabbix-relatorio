@@ -119,7 +119,7 @@ header( 'Content-type: text/html; charset=utf-8' );
 </head>
 <body class="originalblue">
 <div id="message-global-wrap"><div id="message-global"></div></div>
-<table class="maxwidth page_header" cellspacing="0" cellpadding="5"><tr><td class="page_header_l"><a class="image" href="https://zabbix.grupomytec.com.br/" target="_blank"><div class="zabbix_logo2">&nbsp;</div></a></td><td class="maxwidth page_header_r">&nbsp;</td></tr></table>
+<table class="maxwidth page_header" cellspacing="0" cellpadding="5"><tr><td class="page_header_l"><a class="image" href="https://ZABBIX.EXEMPLO.COM.BR/" target="_blank"><div class="zabbix_logo2">&nbsp;</div></a></td><td class="maxwidth page_header_r">&nbsp;</td></tr></table>
 <br/><br/>
 <center><h1>Gerar relatório PDF</h1></center>
 <br/>

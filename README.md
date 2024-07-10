@@ -31,3 +31,10 @@ Remember to adjust config.inc.php to match your company, server and location. Th
 
 Follow the discussion here:
 https://www.zabbix.com/forum/showthread.php?t=24998
+
+######
+Editar o arquivo: config.inc.php
+Alterar as linhas: 27, 29, 30, 48
+Editar o arquivo: chooser.php
+Alterar a linha: 122
+Alterar a imagem: images/general/zabbix.png, images/zabbix_logo2.png, images/favicon.ico, images/logo_index.png

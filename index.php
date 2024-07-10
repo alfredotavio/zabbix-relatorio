@@ -55,7 +55,7 @@ header("location: chooser.php");
 <div id="message-global-wrap"><div id="message-global"></div></div>
 <br/><br/>
 <br/>
-<center><img src="images/mytec_index.png"></center>
+<center><img src="images/logo_index.png"></center>
 <center><h1>Gerador de relatórios PDF</h1></center>
 <br/>
 <center>

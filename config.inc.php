@@ -21,13 +21,13 @@ $showdates = false; // Prepend date and time on items and trends, or leave it ou
 //$mygraphs = '#(Ping|CPU load|CPU usage|CPU util|processor|Disk space|Swap|Ethernet|Memory usage|^Traffic on |traffic on eth)#';
 //$myitemgraphs = '#(Utilization of|farm connection|Average Latency|Number of processes|Cache % Hit)#';
 $mygraphs = '#(CPU usage|CPU utilization|Memory utilization|Interface|Swap usage|Disk utilization)#';
-$myitemgraphs = '#(Space utilization|Free inodes|System uptime|Load average|Number of processes|Number of logged in users)#';
+$myitemgraphs = '#(Space utilization|Free inodes|System uptime|Load average|Number of processes|Number of logged in users|ICMP ping)#';
 
 # zabbix server info(user must have API access)
-$z_server 	= 'https://zabbix.grupomytec.com.br/';
+$z_server 	= 'https://ZABBIX.EXEMPLO.COM.BR/';
 // $z_server 	= 'https://YourServerHere/zabbix/'; // Replace YourServerHere with either en IP or an FDQN (e.g. zabbix.company.com). Remove the s in https if for some reason you don't use https yet. Or better yet, get Let's Encrypt installed and use https!
-$z_user		= 'relatorio';
-$z_pass		= '5VlwUmG$D7@j7nvVTv3NjNv8z'; // Update this. Default PW for Admin is zabbix
+$z_user		= 'USER-ZABBIX';
+$z_pass		= 'PASS-ZABBIX'; // Update this. Default PW for Admin is zabbix
 
 
 # Temporary directory for storing pdf data and graphs - must exist
@@ -45,7 +45,7 @@ $timezone	= 'America/Sao_Paulo';
 # Logo used in PDF - may be empty
 # TODO: Specify image size!
 $pdf_logo	= './images/general/zabbix.png';
-$company_name   = 'Grupo Mytec';
+$company_name   = 'NOME DA EMPRESA';
 $hide_company_name = false; // If you don't what the red bar with company name in your report
 
 //DO NOT CHANGE BELOW THIS LINE

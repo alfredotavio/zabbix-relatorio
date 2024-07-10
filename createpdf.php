@@ -238,7 +238,7 @@ $pdf->saveState();
 $pdf->setStrokeColor(0,0,0,1);
 $pdf->line(20,40,578,40);
 $pdf->line(20,822,578,822);
-$pdf->addText(50,34,6,'Grupo Mytec - Zabbix Report v' . $version);
+$pdf->addText(50,34,6,'Zabbix Report v' . $version);
 $pdf->restoreState();
 $pdf->closeObject();
 // note that object can be told to appear on just odd or even pages by changing 'all' to 'odd'
